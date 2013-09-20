@@ -1,8 +1,8 @@
 <?php
 
-namespace daveudaimon\ImageManagerBundle\Service;
+namespace Daveudaimon\ImageManagerBundle\Service;
 
-use daveudaimon\ImageManagerBundle\Entity\Image;
+use Daveudaimon\ImageManagerBundle\Entity\Image;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 define('IMAGE_MANAGER_DIR_HASH', 512);
@@ -74,7 +74,7 @@ class ImageManagerService
 
   public function getImage($category, $reference, $throwException=true)
   {
-    $image = $this->getEntityManager()->getRepository('daveudaimonImageManagerBundle:Image')
+    $image = $this->getEntityManager()->getRepository('DaveudaimonImageManagerBundle:Image')
       ->findOneBy(array('category' => $category, 'reference' => $reference));
 
     if ($throwException && !$image)

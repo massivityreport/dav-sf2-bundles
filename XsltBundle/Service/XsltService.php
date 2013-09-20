@@ -1,6 +1,6 @@
 <?php
 
-namespace daveudaimon\XsltBundle\Service;
+namespace Daveudaimon\XsltBundle\Service;
 
 class XsltService
 {

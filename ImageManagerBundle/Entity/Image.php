@@ -1,6 +1,6 @@
 <?php
 
-namespace daveudaimon\ImageManagerBundle\Entity;
+namespace Daveudaimon\ImageManagerBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

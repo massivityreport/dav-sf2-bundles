@@ -1,6 +1,6 @@
 <?php
 
-namespace daveudaimon\UtilsBundle\Tools;
+namespace Daveudaimon\UtilsBundle\Tools;
 
 class dmTools
 {

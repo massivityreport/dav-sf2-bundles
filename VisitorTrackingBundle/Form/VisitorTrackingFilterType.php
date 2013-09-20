@@ -1,6 +1,6 @@
 <?php
 
-namespace daveudaimon\VisitorTrackingBundle\Form;
+namespace Daveudaimon\VisitorTrackingBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

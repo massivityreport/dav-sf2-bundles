@@ -1,12 +1,12 @@
 <?php
 
-namespace daveudaimon\VisitorTrackingBundle\Entity;
+namespace Daveudaimon\VisitorTrackingBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="daveudaimon\VisitorTrackingBundle\Repository\VisitorRepository")
+ * @ORM\Entity(repositoryClass="Daveudaimon\VisitorTrackingBundle\Repository\VisitorRepository")
  * @ORM\Table(name="visitor")
  * @ORM\HasLifecycleCallbacks
  */

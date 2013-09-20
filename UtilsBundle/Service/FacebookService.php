@@ -1,6 +1,6 @@
 <?php
 
-namespace daveudaimon\UtilsBundle\Service;
+namespace Daveudaimon\UtilsBundle\Service;
 
 use Symfony\Component\HttpFoundation\Request;
 

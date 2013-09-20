@@ -1,10 +1,10 @@
 <?php
-namespace daveudaimon\VisitorTrackingBundle\Entity;
+namespace Daveudaimon\VisitorTrackingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="daveudaimon\VisitorTrackingBundle\Repository\VisitorHitRepository")
+ * @ORM\Entity(repositoryClass="Daveudaimon\VisitorTrackingBundle\Repository\VisitorHitRepository")
  * @ORM\Table(name="visitor_hit")
  * @ORM\HasLifecycleCallbacks
  */
@@ -64,9 +64,9 @@ class VisitorHit
     /**
      * Set visitor
      *
-     * @param daveudaimon\VisitorTrackingBundle\Entity\Visitor $visitor
+     * @param Daveudaimon\VisitorTrackingBundle\Entity\Visitor $visitor
      */
-    public function setVisitor(\daveudaimon\VisitorTrackingBundle\Entity\Visitor $visitor)
+    public function setVisitor(\Daveudaimon\VisitorTrackingBundle\Entity\Visitor $visitor)
     {
         $this->visitor = $visitor;
     }
@@ -74,7 +74,7 @@ class VisitorHit
     /**
      * Get visitor
      *
-     * @return daveudaimon\VisitorTrackingBundle\Entity\Visitor
+     * @return Daveudaimon\VisitorTrackingBundle\Entity\Visitor
      */
     public function getVisitor()
     {

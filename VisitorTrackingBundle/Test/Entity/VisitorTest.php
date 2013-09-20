@@ -1,8 +1,8 @@
 <?php
 
-namespace daveudaimon\VisitorTrackingBundle\Tests\Entity;
+namespace Daveudaimon\VisitorTrackingBundle\Tests\Entity;
 
-use daveudaimon\VisitorTrackingBundle\Entity\Visitor;
+use Daveudaimon\VisitorTrackingBundle\Entity\Visitor;
 
 class VisitorTest extends \PHPUnit_Framework_TestCase
 {

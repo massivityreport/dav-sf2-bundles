@@ -1,5 +1,5 @@
 <?php
-namespace daveudaimon\VisitorTrackingBundle\Repository;
+namespace Daveudaimon\VisitorTrackingBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 

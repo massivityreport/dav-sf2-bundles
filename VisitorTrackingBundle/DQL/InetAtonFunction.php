@@ -1,6 +1,6 @@
 <?php
 
-namespace daveudaimon\VisitorTrackingBundle\DQL;
+namespace Daveudaimon\VisitorTrackingBundle\DQL;
 
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 use Doctrine\ORM\Query\Lexer;

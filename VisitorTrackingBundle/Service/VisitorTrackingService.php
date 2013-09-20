@@ -1,10 +1,10 @@
 <?php
 
-namespace daveudaimon\VisitorTrackingBundle\Service;
+namespace Daveudaimon\VisitorTrackingBundle\Service;
 
 use Symfony\Component\HttpFoundation\Request;
-use daveudaimon\VisitorTrackingBundle\Entity\Visitor;
-use daveudaimon\VisitorTrackingBundle\Entity\VisitorHit;
+use Daveudaimon\VisitorTrackingBundle\Entity\Visitor;
+use Daveudaimon\VisitorTrackingBundle\Entity\VisitorHit;
 
 class VisitorTrackingService
 {
@@ -45,7 +45,7 @@ class VisitorTrackingService
     }
     else
     {
-      $visitor = $em->getRepository('daveudaimonVisitorTrackingBundle:Visitor')->find($session->get('visitor_id'));
+      $visitor = $em->getRepository('DaveudaimonVisitorTrackingBundle:Visitor')->find($session->get('visitor_id'));
     }
 
     // save hit
