@@ -3,21 +3,15 @@
     "type":        "symfony-bundle",
     "homepage":    "http://github.com/daveudaimon/daveudaimon-sf2-bundles",
     "license":     "MIT",
-
     "authors": [
         {
             "name": "David Mas",
             "homepage": "http://www.linkedin.com/pub/david-mas/9/36b/243"
         }
     ],
-
-    "minimum-stability": "dev",
-
     "autoload": {
         "psr-0": {
             "daveudaimon\\": ""
         }
-    },
-
-    "target-dir": "daveudaimon"
+    }
 }
