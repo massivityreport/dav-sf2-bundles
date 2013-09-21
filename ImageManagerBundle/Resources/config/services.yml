@@ -1,0 +1,13 @@
+services:
+    image_manager:
+        class: Daveudaimon\ImageManagerBundle\Service\ImageManagerService
+        arguments:
+            - @doctrine
+            - %kernel.root_dir%/../web/medias/images
+            - medias/images
+    image_manager_twig_extension:
+        class: Daveudaimon\ImageManagerBundle\Twig\ImageManagerTwigExtension
+        arguments:
+            - @image_manager
+        tags:
+            - { name: twig.extension }

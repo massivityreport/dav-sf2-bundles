@@ -21,14 +21,14 @@ class ImageManagerService
       throw new Exception(sprintf('Invalid root image dir: "%s"', $rootDir));
     }
 
-    $this->entityManager = $doctrine->getEntityManager();
+    $this->entityManager = $doctrine->getManager();
     $this->rootDir = $rootDir;
     $this->rootUrl = $rootUrl;
   }
 
   public function setEntityManager($doctrine)
   {
-    $this->entityManager = $doctrine->getEntityManager();
+    $this->entityManager = $doctrine->getManager();
   }
 
   public function getEntityManager()
