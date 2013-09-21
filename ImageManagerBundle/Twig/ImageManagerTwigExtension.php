@@ -1,6 +1,6 @@
 <?php
 
-namespace Daveudaimon\ImageManager\Twig;
+namespace Daveudaimon\ImageManagerBundle\Twig;
 
 use Daveudaimon\ImageManagerBundle\Service\ImageManagerService;
 
