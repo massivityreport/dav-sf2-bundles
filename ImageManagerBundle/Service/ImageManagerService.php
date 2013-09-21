@@ -18,7 +18,7 @@ class ImageManagerService
   {
     if (!\file_exists($rootDir))
     {
-      throw new Exception(sprintf('Invalid root image dir: "%s"', $rootDir));
+      throw new \Exception(sprintf('Invalid root image dir: "%s"', $rootDir));
     }
 
     $this->entityManager = $doctrine->getManager();
