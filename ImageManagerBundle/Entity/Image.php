@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="image")
+ * @ORM\Table(name="image_manager_image")
  */
 class Image
 {
@@ -35,7 +35,7 @@ class Image
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -55,7 +55,7 @@ class Image
     /**
      * Get category
      *
-     * @return string 
+     * @return string
      */
     public function getCategory()
     {
@@ -75,7 +75,7 @@ class Image
     /**
      * Get reference
      *
-     * @return string 
+     * @return string
      */
     public function getReference()
     {
@@ -95,7 +95,7 @@ class Image
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
