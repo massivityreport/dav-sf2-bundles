@@ -1,0 +1,5 @@
+services:
+    visitor_tracking:
+        class: Daveudaimon\VisitorTrackingBundle\Service\VisitorTrackingService
+        arguments:
+            - @doctrine
