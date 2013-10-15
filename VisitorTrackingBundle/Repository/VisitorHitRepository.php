@@ -41,7 +41,7 @@ class VisitorHitRepository extends EntityRepository
     return $qb->getQuery()->getResult();
   }
 
-  protected function getBaseQueryBuilder($name, $visitorIds = null, $conditions=array())
+  protected function getBaseQueryBuilder($name, $visitorIds = null)
   {
     $qb = $this->createQueryBuilder('h');
 
@@ -66,5 +66,4 @@ class VisitorHitRepository extends EntityRepository
 
     return $qb;
   }
-
 }
