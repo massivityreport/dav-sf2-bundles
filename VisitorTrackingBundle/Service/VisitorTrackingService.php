@@ -17,7 +17,7 @@ class VisitorTrackingService
 
   public function getEntityManager()
   {
-    return $this->doctrine->getEntityManager();
+    return $this->doctrine->getManager();
   }
 
   public function trackVisitor(Request $request, $name, array $options = array())
@@ -63,5 +63,18 @@ class VisitorTrackingService
       $em->persist($hit);
       $em->flush();
     }
+  }
+
+  public function getVisitorCount($name, $conditions=array())
+  {
+    $em = $this->getEntityManager();
+
+    $visitorIds = null;
+    if (!empty($conditions))
+    {
+      $visitorIds = $em->getRepository('DaveudaimonVisitorTrackingBundle:Visitor')->getVisitorIds($conditions);
+    }
+
+    return $em->getRepository('DaveudaimonVisitorTrackingBundle:VisitorHit')->getVisitorCount($name, $visitorIds);
   }
 }
