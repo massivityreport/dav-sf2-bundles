@@ -83,7 +83,7 @@ class VisitorTrackingService
     $counts = array();
     foreach ($names as $name)
     {
-      $counts[$name] = $this->getVisitorCount($name);
+      $counts[$name] = $this->getVisitorCount($name, $conditions);
     }
 
     return $counts;
