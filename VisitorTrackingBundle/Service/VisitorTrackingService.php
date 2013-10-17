@@ -65,7 +65,7 @@ class VisitorTrackingService
     }
   }
 
-  public function getVisitorCount($name, $conditions=array())
+  public function getVisitorCount($name, array $conditions=array())
   {
     $em = $this->getEntityManager();
 
@@ -78,7 +78,7 @@ class VisitorTrackingService
     return $em->getRepository('DaveudaimonVisitorTrackingBundle:VisitorHit')->getVisitorCount($name, $visitorIds);
   }
 
-  public function getVisitorCounts(array $names, $conditions=array())
+  public function getVisitorCounts(array $names, array $conditions=array())
   {
     $counts = array();
     foreach ($names as $name)
@@ -87,5 +87,12 @@ class VisitorTrackingService
     }
 
     return $counts;
+  }
+
+  public function getContextList(array $conditions=array())
+  {
+    $em = $this->getEntityManager();
+
+    return $em->getRepository('DaveudaimonVisitorTrackingBundle:Visitor')->getContextList($conditions);
   }
 }
