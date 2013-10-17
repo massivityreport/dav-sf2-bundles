@@ -77,4 +77,15 @@ class VisitorTrackingService
 
     return $em->getRepository('DaveudaimonVisitorTrackingBundle:VisitorHit')->getVisitorCount($name, $visitorIds);
   }
+
+  public function getVisitorCounts(array $names, $conditions=array())
+  {
+    $counts = array();
+    foreach ($names as $name)
+    {
+      $counts[$name] = $this->getVisitorCount($name);
+    }
+
+    return $counts;
+  }
 }
