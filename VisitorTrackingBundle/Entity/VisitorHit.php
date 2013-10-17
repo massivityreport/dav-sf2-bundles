@@ -39,11 +39,6 @@ class VisitorHit
     protected $target;
 
     /**
-     * @ORM\Column(type="string", nullable=true)
-     */
-    protected $context;
-
-    /**
      * @ORM\PrePersist
      */
     public function prePersist()
@@ -140,26 +135,6 @@ class VisitorHit
     public function getTarget()
     {
         return $this->target;
-    }
-
-    /**
-     * Set context
-     *
-     * @param string $context
-     */
-    public function setContext($context)
-    {
-        $this->context = $context;
-    }
-
-    /**
-     * Get context
-     *
-     * @return string
-     */
-    public function getContext()
-    {
-        return $this->context;
     }
 
     /**
