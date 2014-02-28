@@ -1,0 +1,6 @@
+services:
+    user_tracking:
+        class: Daveudaimon\UserTrackingBundle\Service\UserTrackingService
+        arguments:
+            - @doctrine
+            - @security.context

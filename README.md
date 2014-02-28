@@ -8,10 +8,15 @@ ImageManagerBundle
 
 SF2 service to handle image upload and display, with on demand thumbnail generation and automatic on disk caching.
 
-VisitorBundle
+VisitorTrackingBundle
 -------------
 
-Track your visitors step by step, analyse (there you're on your own) and take action !
+Track your visitors step by step, analyse and take action !
+
+UserTrackingBundle
+-------------
+
+Track your users step by step, analyse and take action !
 
 XsltBundle
 ----------
