@@ -1,5 +1,5 @@
-daveudaimon-sf2-bundles
-=======================
+dav-sf2-bundles
+===============
 
 These are utility bundles that I use in all my sf2 projects. Feel free to use and improve.
 
